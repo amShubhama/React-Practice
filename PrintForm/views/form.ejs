@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <style>
+        h1{
+            display: none;
+        }
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button{
+       -webkit-appearance:none;
+        margin:0;
+       }
+    </style>
+    <style>
+        @media print{
+            .btn{
+                display: none;
+            }
+            h1{
+                display: unset;
+            }
+        }
+    </style>
+    <script>
+        function getPrint(){
+            window.print();
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to IES College Of Technology</h1>
+    <form action="/saveform" method="post" class="w-100">
+            <div class="row g-3 align-items-center mx-2">
+                <div class="row g-3 align-items-center col-auto w-50">
+                    <label class="col-form-label col-auto" for="name">Name</label>
+                    <input class="form-control w-50 col-auto" type="text" name="name" required>
+                </div>
+                <div class="row g-3 align-items-center col-auto w-50">
+                    <label class="col-form-label col-auto" for="rollNo">Roll No</label>
+                    <input class="form-control w-50 col-auto" type="text" name="rollNo" required>
+                </div>
+            </div>
+            <div class="row g-3 align-items-center w-100 mx-2">
+                <div class="row g-3 align-items-center col-auto w-50">
+                    <label class="col-form-label col-auto" for="father">Father Name</label>
+                    <input class="form-control w-50 col-auto" type="text" name="father" required>
+                </div>
+                <div class="row g-3 align-items-center col-auto w-50">
+                    <label class="col-form-label col-auto" for="mother">Mother</label>
+                    <input class="form-control w-50 col-auto" type="text" name="mother" required>
+                </div>
+            </div>
+            <div class="row g-3 align-items-center w-100 mx-2">
+                <div class="row g-3 align-items-center col-auto w-50">
+                    <label class="col-form-label col-auto" for="course">Course</label>
+                    <input class="form-control w-50 col-auto" type="text" name="course"required>
+                </div>
+                <div class="row g-3 align-items-center col-auto w-50">
+                    <label class="col-form-label col-auto" for="branch">Branch</label>
+                    <input class="form-control w-50 col-auto" type="text" name="branch" required>
+                </div>
+            </div>
+            <div class="row g-3 align-items-center w-100 mx-2">
+                <div class="row g-3 align-items-center col-auto w-50">
+                    <label class="col-form-label col-auto" for="mobile">Mobile No</label>
+                    <input class="form-control w-50 col-auto" type="number"  name="mobile" required>
+                </div>
+                <div class="row g-3 align-items-center col-auto w-50">
+                    <label class="col-form-label col-auto" for="email">Email</label>
+                    <input class="form-control w-50 col-auto" type="email" name="email" required>
+                </div>
+            </div>
+            <div class="row g-3 align-items-center col-auto w-100 mt-1">
+                <label class="col-form-label col-auto w-20" for="address">Address</label>
+                <input class="form-control w-50" type="text" name="address" required>
+            </div>
+            <button type="submit" class="btn btn-success mt-2">Submit</button>
+    </form>
+    <button onclick="getPrint()" class="btn btn-primary mt-2">Print</button>
+    <script src="../script/print.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
