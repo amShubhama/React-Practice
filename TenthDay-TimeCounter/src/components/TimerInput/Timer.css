@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+button {
+    width: 50px;
+    height: 30px;
+}
+
+.time-input-wrapper input {
+    height: 28px;
+    font-size: large;
+    margin-left: 40px;
+}
+
+.timerContainer {
+    background-color: dodgerblue;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-size: larger;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.listContainer {
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    gap: 30px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
